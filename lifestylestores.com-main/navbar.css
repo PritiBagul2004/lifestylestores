@@ -1,0 +1,354 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: CircularStd,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+#menuebtnid{
+   
+    display: none !important;
+
+}
+#listContainer{
+    display: none !important;
+}
+
+.first,
+.second ul {
+    background-color: black;
+    padding: 1vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    list-style: none;
+    position: sticky;
+    top: 0vh;
+    z-index: 50;
+}
+/* .second ul {
+    position: sticky;
+    top: 0vh;
+    z-index: 10;
+} */
+.first>ul {
+    list-style: none;
+}
+
+.first>div ul {
+    display: flex;
+    list-style: none;
+    width: 30vw;
+    justify-content: space-between;
+    position: sticky;
+    top: 0vh;
+}
+
+
+
+
+.navbar {
+    background-color: whitesmoke;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 5vh;
+    z-index: 65;
+}
+/* .navbar > div{
+wi
+} */
+.navbar ul {
+    /* display: inline-flex; */
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 5vh;
+    z-index: 10;
+}
+
+.navbar ul li {
+    margin: .5vw;
+    margin-bottom: 0%;
+    padding-bottom: 2.2vh;
+}
+
+.navbar input {
+    width: 25vw;
+    padding: 1vh;
+    outline: none;
+    background-color: white;
+    background-color: whitesmoke;
+    border: .2px solid rgb(174, 172, 172);
+    margin-bottom: -1vh;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.navbar ul li a:hover {
+    color: rgb(250, 166, 25);
+
+}
+
+.navbar ul li:hover {
+    background-color: white;
+}
+
+.submenue {
+    margin-top: 1vw;
+    position: absolute;
+    top: 9vh;
+    /* left: 2vw; */
+    width: 90vw;
+    z-index: 8;
+}
+
+.submenue>ul>li {
+    color: black;
+    font-size: 1vw;
+}
+
+.navbar ul li>div {
+    display: none;
+    position: absolute;
+    left: -6vw;
+    top: 3vh;
+    width: 85vw;
+}
+
+.navbar ul li:hover .submenue {
+    background-color: white;
+    display: inline-block;
+    color: rgb(250, 166, 25);
+}
+
+.submenue>ul>li:hover .in {
+    display: block;
+}
+
+.in {
+    background-color: white;
+    width: 95vw;
+    height: 50vh;
+    border: 2px solid whitesmoke;
+    position: absolute;
+    left: 1vw;
+    display: flex;
+    margin-top: 2vh;
+}
+
+
+.innest_menue {
+    width: 100vw;
+    height: 20vh;
+    /* border: .5px solid whitesmoke; */
+}
+
+.in>div {
+    float: left;
+    /* border: 1px solid red ; */
+    width: 15vw;
+    height: 20vh;
+    /* margin-top: 2vh; */
+}
+
+.in:first-child {
+    line-height: 3vh;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+
+  
+    #responsivenav{
+        display: flex;
+        justify-content: space-between;
+        background-color: wheat;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        background-color: rgb(255,254,254);
+
+
+    }
+    #responsivenav :nth-child(2){
+        margin-right: 45vw;
+    }
+    #listContainer{
+        top: 3.5vh;
+    }
+    .slide_back{
+        font-size: 4vw;position: absolute;top: 30vh;left: 5vw;
+    }
+    .slide_back+div{
+        font-size: 4vw;position: absolute;top: 30vh;left: 92vw;
+    }
+
+@media all and (min-width:60px) and (max-width:700px){
+     #menuebtnid{
+        display:  block !important;
+    }
+    #mediaimage  {
+        width: 10vw;
+
+    }
+    /* #listContainer {
+        di
+    } */
+    .listContainer{
+        width: 30vw;
+        border: 1px solid #cecece;
+        background-color: whitesmoke;
+        border-radius: 1vw;
+        margin-left: 1vw;
+        position: absolute;
+        top: 5vh;
+        left: 0vw;
+        display: none;
+        z-index: 100;
+    }
+    .listContainer > div{
+        margin: 1vh;
+    }
+    .listContainer>img{
+        width: 15vw;
+    }
+    .listContainer ul{
+        list-style: none;
+        margin: 1vh;
+    }
+    .listOflistContainer{
+        display: none;
+    }
+   /* .listOflistContainer{
+        margin: 2vh;
+    }
+    .listContainer >ul li:hover .listOflistContainer{
+        display: block;
+    }
+    .listOflistContainer > p:hover {
+        color: orangered;
+        background-color: green;
+        color: white;
+    }
+    .flexOfNavbar >div+div:hover {
+       background-color: red;
+       width: 2.5vw;
+       height: 4vh;
+       text-align: center;
+       align-items: center;
+       border-radius: .2vw;
+    }
+    .menubtn:hover .listContainer{
+       color: red;
+    }
+    .listContainer > a{
+        text-decoration: none;
+        color: black;
+    }
+    .first{
+      display: none;
+
+    } */
+    .flexOfNavbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .listContainer{
+        width: 30vw;
+        border: 1px solid #cecece;
+        background-color: whitesmoke;
+        border-radius: 1vw;
+        margin-left: 1vw;
+        position: absolute;
+        top: 5vh;
+        left: 0vw;
+        display: none;
+        z-index: 100;
+    }
+    .listContainer > div{
+        margin: 1vh;
+    }
+    .listContainer>img{
+        width: 15vw;
+    }
+    .listContainer ul{
+        list-style: none;
+        margin: 1vh;
+    }
+    .listOflistContainer{
+        display: none;
+    }
+    .listOflistContainer{
+        margin: 2vh;
+    }
+    .listContainer >ul li:hover .listOflistContainer{
+        display: block;
+    }
+    .listOflistContainer > p:hover {
+        color: orangered;
+        background-color: green;
+        color: white;
+    }
+    .flexOfNavbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flexOfNavbar >div+div:hover {
+       background-color: red;
+       width: 2.5vw;
+       height: 4vh;
+       text-align: center;
+       align-items: center;
+       border-radius: .2vw;
+    }
+    .menubtn:hover .listContainer{
+       color: red;
+    }
+    .listContainer > a{
+        text-decoration: none;
+        color: black;
+    }
+    .first{
+      display: none;
+
+    }
+    /* .first>div ul {
+        width: 40vw;
+    } */
+    #navbarid{
+        display: none;
+    }
+
+    #responsivenav{
+        display: flex;
+        justify-content: space-between;
+        background-color: wheat;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        background-color: rgb(255,254,254);
+
+
+    }
+    #responsivenav :nth-child(2){
+        margin-right: 45vw;
+    }
+    #listContainer{
+        top: 3.5vh;
+    }
+}
+#responsivenav{
+    display: none;
+}
+#listContainer{
+    display: none;
+}
+
